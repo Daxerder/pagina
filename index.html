@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Bot de Discord V 1.0</title>
+</head>
+<body>
+    <!--solo se vera en la version celular 2.0 xD-->
+    <div class = "menu">
+        <a href="">Inicio</a>
+        <a href="">Primario</a>
+        <a href="">Secundario</a>
+        <a href="">Soporte/Contactanos</a>
+        <a href=""></a>
+    </div>
+    <div class="contenido">
+        <h1> BOT_DISCORD </h1>
+        <div class="fila"> 
+            <label class="titulo">Prefix:</label>
+            <span class="prefix titulo" name="span">k<</span>
+        </div>
+        <div class = "columnas3">
+            <button class="boton mostrar mostrar_off verde" onclick="cambiar()">Cambiar</button>
+            <button class="boton mostrar mostrar_off rojo" onclick="reestablecer()" >Reestablecer</button>
+            <button class="boton ocultar verde" onclick="guardar()">Guardar</button>
+            <button class="boton ocultar rojo" onclick="cambiar()">Cancelar</button>
+            
+        </div>
+        <div class="input">
+            <input class="titulo ocultar" type="text" maxlength="2" id="prefix" value="k<">
+        </div>
+        
+        <table>
+            <p class="subtitulo">Administracion</p>
+            <tr class="cuadro">
+                <td>Ban</td>
+                <td>Banea al usuario mencionado.</td>
+                <td><span name="span" class="span">k<</span>ban @usuario</td>
+            </tr>
+            <tr class="cuadro">
+                <td>Clear</td>
+                <td>Limpia el chat borrando de 1 a 100 mensajes.</td>
+                <td><span name="span" class="span">k<</span>clear [1-100]</td>
+            </tr>
+            <tr class="cuadro">
+                <td>Rol</td>
+                <td>Asigna un rol al usuario mencionado.</td>
+                <td><span name="span" class="span">k<</span>role [rol] @usuario</td>
+            </tr>
+        </table>
+
+        <table>
+            <p class="subtitulo">Moderacion</p>
+            <tr class="cuadro">
+                <td>Kick</td>
+                <td>Kickea al usuario mencionado.</td>
+                <td><span name="span" class="span">k<</span>kick @usuario</td>
+            </tr>
+            <tr class="cuadro">
+                <td>Prefix</td>
+                <td>Cambia el prefijo.</td>
+                <td><span name="span" class="span">k<</span>prefix [nuevo prefijo]</td>
+            </tr>
+            <tr class="cuadro">
+                <td>Voice Kick</td>
+                <td>Kickea un usuario de un chat de voz.</td>
+                <td><span name="span" class="span">k<</span>kick @usuario</td>
+            </tr>
+        </table>
+
+        <table>
+            <p class="subtitulo">Extras</p>
+            <tr class="cuadro">
+                <td>Play</td>
+                <td>Reproduce el audio del vídeo pasado por parámetro.</td>
+                <td><span name="span" class="span">k<</span>play [link de youtube]</td>
+            </tr>
+            <tr class="cuadro">
+                <td>Pause</td>
+                <td>Pausa el audio en reproducción.</td>
+                <td><span name="span" class="span">k<</span>pause</td>
+            </tr>
+            <tr class="cuadro">
+                <td>Stop</td>
+                <td>Se para la reproducción del audio y el bot deja el canal.</td>
+                <td><span name="span" class="span">k<</span>stop</td>
+            </tr>
+            <tr class="cuadro">
+                <td>Queue</td>
+                <td>Muestra la cola de reproducción.</td>
+                <td><span name="span" class="span">k<</span>queue</td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/funciones.js"></script>
+</body>
+</html>

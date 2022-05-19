@@ -1,0 +1,100 @@
+body{
+    /*background-color: aqua;*/
+    margin: 0;
+}
+
+.menu {
+    display: none;
+}/*se desactivo para el responsive*/
+
+.contenido{
+    width: 1000px;
+    margin: auto;
+}
+.contenido h1{
+    text-align: center;
+}
+
+.fila {
+    display: grid;
+    justify-content: center; 
+    grid-template-columns:90px 40px;
+    gap: 30px
+}
+.titulo{
+    font-size: 30px;
+}
+.prefix {
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 0.2em;
+}
+
+.input {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.input > input {
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 25px;
+}
+
+table {    
+    margin: auto;
+    border-collapse: collapse;
+    border: 1.5px solid black;
+}
+
+.cuadro {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 100px 400px 400px;
+    /*border-radius: 0.2em;*/
+}
+.cuadro > td{
+    padding: 10px;
+    border-collapse: collapse;
+    border: 1.5px solid black;
+}
+
+.columnas3{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,150px);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.mostrar_off, .ocultar{
+    display: none;
+}
+
+.mostrar, .ocultar_off{
+    display: inline-block;
+}
+.boton {
+    cursor: pointer;
+    font-size: 15px;
+    height: 30px;
+    border-radius: 0.6em;
+    background-color: gray;
+}
+.span {
+    color: red;;
+}
+
+.verde:hover{
+    background-color: chartreuse;
+}
+
+.rojo:hover{
+    background-color: crimson;
+}
+
