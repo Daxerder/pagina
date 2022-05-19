@@ -46,7 +46,7 @@ body{
     font-size: 25px;
 }
 
-table {    
+.tabla {    
     margin: auto;
     border-collapse: collapse;
     border: 1.5px solid black;
@@ -55,7 +55,7 @@ table {
 .cuadro {
     font-size: 20px;
     display: grid;
-    grid-template-columns: 100px 400px 400px;
+    grid-template-columns: 100px 300px 500px;
     /*border-radius: 0.2em;*/
 }
 .cuadro > td{
@@ -102,10 +102,6 @@ table {
 @media (max-width: 480px) {
     .contenido{
         max-width: 450px;
-    }
-
-    .administracion, .moderacion, .extras {
-        display: none;
     }
 
     #moderador {

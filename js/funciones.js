@@ -39,5 +39,5 @@ function reestablecer(){
 
 function ense(){
     alert("asd");
-    mod.style.display = "inline-block"
+    mod.style.display = "inline-block";
 }
