@@ -79,6 +79,7 @@ table {
 .mostrar, .ocultar_off{
     display: inline-block;
 }
+
 .boton {
     cursor: pointer;
     font-size: 15px;
@@ -98,3 +99,16 @@ table {
     background-color: crimson;
 }
 
+@media (max-width: 480px) {
+    .contenido{
+        max-width: 450px;
+    }
+
+    .administracion, .moderacion, .extras {
+        display: none;
+    }
+
+    #moderador {
+        display: none;
+    }
+}

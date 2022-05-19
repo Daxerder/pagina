@@ -29,12 +29,13 @@
             <button class="boton ocultar rojo" onclick="cambiar()">Cancelar</button>
             
         </div>
+
         <div class="input">
             <input class="titulo ocultar" type="text" maxlength="2" id="prefix" value="k<">
         </div>
         
-        <table>
-            <p class="subtitulo">Administracion</p>
+        <table class="administrador">
+            <p class="subtitulo administrador">Administracion</p>
             <tr class="cuadro">
                 <td>Ban</td>
                 <td>Banea al usuario mencionado.</td>
@@ -52,8 +53,8 @@
             </tr>
         </table>
 
-        <table>
-            <p class="subtitulo">Moderacion</p>
+        <table class="moderador" id="moderador">
+            <p class="subtitulo" id="moderador">Moderacion</p>
             <tr class="cuadro">
                 <td>Kick</td>
                 <td>Kickea al usuario mencionado.</td>
@@ -71,8 +72,8 @@
             </tr>
         </table>
 
-        <table>
-            <p class="subtitulo">Extras</p>
+        <table class="extras">
+            <p class="subtitulo extras">Extras</p>
             <tr class="cuadro">
                 <td>Play</td>
                 <td>Reproduce el audio del vídeo pasado por parámetro.</td>
@@ -94,6 +95,8 @@
                 <td><span name="span" class="span">k<</span>queue</td>
             </tr>
         </table>
+        
+        <button class="boton" onclick="ense()">mostrar</button>
     </div>
     <script src="js/funciones.js"></script>
 </body>
