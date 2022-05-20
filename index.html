@@ -9,13 +9,19 @@
 </head>
 <body>
     <!--solo se vera en la version celular 2.0 xD-->
-    <div class = "menu">
-        <a href="">Inicio</a>
-        <a href="">Primario</a>
-        <a href="">Secundario</a>
-        <a href="">Soporte/Contactanos</a>
-        <a href=""></a>
-    </div>
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" style="padding: 0;"> <img src="img/menu.png" width="25px" style="margin: 0;"></label>
+        <nav class="menu">
+            <ul>
+                <li><a onclick="ense('inicio')">Inicio</a></li>
+                <li><a onclick="ense('admin')">Administrador</a></li>
+                <li><a onclick="ense('mod')">Moderador</a></li>
+                <li><a onclick="ense('ext')">Extras</a></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
     <div class="contenido">
         <h1> BOT_DISCORD </h1>
         <div class="fila"> 
@@ -34,6 +40,8 @@
             <input class="titulo ocultar" type="text" maxlength="2" id="prefix" value="k<">
         </div>
         
+        <p class="descripcion off">Descripcion del bot</p>
+
         <table class="tabla administrador off">
             <p class="subtitulo administrador off">Administracion</p>
             <tr class="cuadro">
@@ -58,17 +66,17 @@
             <tr class="cuadro">
                 <th>Kick</th>
                 <th><span name="span" class="span">k<</span>kick @usuario</th>
-                <th>Kickea al usuario mencionado.</th>
+                <th class="filas">Kickea al usuario mencionado.</th>
             </tr>
             <tr class="cuadro">
                 <th>Prefix</th>
                 <th><span name="span" class="span">k<</span>prefix [nuevo prefijo]</th>
-                <th>Cambia el prefijo.</th>
+                <th class="filas">Cambia el prefijo.</th>
             </tr>
             <tr class="cuadro">
                 <th>Voice Kick</th>
                 <th><span name="span" class="span">k<</span>kick @usuario</th>
-                <th>Kickea un usuario de un chat de voz.</th>
+                <th class="filas">Kickea un usuario de un chat de voz.</th>
             </tr>
         </table>
 
@@ -77,26 +85,24 @@
             <tr class="cuadro">
                 <th>Play</th>
                 <th><span name="span" class="span">k<</span>play [link de youtube]</th>
-                <th>Reproduce el audio del vídeo pasado por parámetro.</th>
+                <th class="filas">Reproduce el audio del vídeo pasado por parámetro.</th>
             </tr>
             <tr class="cuadro">
                 <th>Pause</th>
                 <th><span name="span" class="span">k<</span>pause</th>
-                <th>Pausa el audio en reproducción.</th>
+                <th class="filas">Pausa el audio en reproducción.</th>
             </tr>
             <tr class="cuadro">
                 <th>Stop</th>
                 <th><span name="span" class="span">k<</span>stop</th>
-                <th>Se para la reproducción del audio y el bot deja el canal.</th>
+                <th class="filas">Se para la reproducción del audio y el bot deja el canal.</th>
             </tr>
             <tr class="cuadro">
                 <th>Queue</th>
                 <th><span name="span" class="span">k<</span>queue</th>
-                <th>Muestra la cola de reproducción.</th>
+                <th class="filas">Muestra la cola de reproducción.</th>
             </tr>
         </table>
-        
-        <button class="boton" onclick="ense()">mostrar</button>
     </div>
     <script src="js/funciones.js"></script>
 </body>
