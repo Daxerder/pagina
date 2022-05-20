@@ -58,7 +58,7 @@ body{
     grid-template-columns: 100px 300px 500px;
     /*border-radius: 0.2em;*/
 }
-.cuadro > td{
+.cuadro > th{
     padding: 10px;
     border-collapse: collapse;
     border: 1.5px solid black;
@@ -102,9 +102,22 @@ body{
 @media (max-width: 480px) {
     .contenido{
         max-width: 450px;
+        margin: 0 0 0 0;
     }
 
-    #moderador {
+    /*.off {
         display: none;
+    }*/
+    .cuadro {
+        display: grid;
+        font-size: 15px;
+        grid-template-columns: 100px 200px;
+        margin: auto;
+        /*border-radius: 0.2em;*/
     }
+    .filas{
+        grid-column: span 2;
+        text-align: center;
+    }
+
 }

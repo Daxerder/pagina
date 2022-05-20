@@ -2,12 +2,14 @@ var mostrar = document.getElementsByClassName('mostrar_off');
 var ocultar = document.getElementsByClassName('ocultar');
 var prefix = document.getElementById('prefix');
 var span = document.getElementsByName('span');
-var admin = document.getElementById('administrador');
-var mod = document.getElementById('moderador');
-var extras = document.getElementById('extras');
+var admin = document.getElementsByClassName('administrador');
+var mod = document.getElementsByClassName('moderador');
+var extras = document.getElementsByClassName('extras');
 //var span2 = document.getElementsByName('span')
 //console.log(span2)
-
+var as = [false,false,false];
+//        admin, mod ,extras
+console.log(as);
 
 function cambiar(){
     for(var i = mostrar.length-1; i>-1; i--){
@@ -38,6 +40,9 @@ function reestablecer(){
 }
 
 function ense(){
-    alert("asd");
-    mod.style.display = "inline-block";
+    console.log(admin);
+    for(var i=0;i<admin.length;i++){
+        admin[i].classList.toggle('off');
+    }
+    console.log(admin);
 }
