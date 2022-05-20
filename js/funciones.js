@@ -2,13 +2,13 @@ var mostrar = document.getElementsByClassName('mostrar_off');
 var ocultar = document.getElementsByClassName('ocultar');
 var prefix = document.getElementById('prefix');
 var span = document.getElementsByName('span');
-var inicio = document.getElementsByClassName('descripcion')
+var inicio = document.getElementsByClassName('descripcion');
 var admin = document.getElementsByClassName('administrador');
 var mod = document.getElementsByClassName('moderador');
 var ext = document.getElementsByClassName('extras');
 //var span2 = document.getElementsByName('span')
 //console.log(span2)
-var validar = [false,false,false];
+var validar = [false,false,false,true];
 //        admin, mod ,extras
 
 function cambiar(){
@@ -42,7 +42,7 @@ function reestablecer(){
 function ense(cond) {
     switch(cond){
         case 'inicio':
-            for(var i = 0; i<validar.length;i++){
+            for(var i = 0; i<validar.length-1;i++){
                 if(validar[i]){
                     switch(i){
                         case 0:
@@ -58,7 +58,10 @@ function ense(cond) {
                     validar[i]=false;
                 }
             }
-            mos(inicio);
+            if(!validar[3]){
+                mos(inicio);
+                validar[3]=true;
+            }
             break;
         case 'admin':
             if(!validar[0]){
@@ -71,6 +74,10 @@ function ense(cond) {
                 if(validar[2]){
                     mos(ext);
                     validar[2]=false;
+                }
+                if(validar[3]){
+                    mos(inicio);
+                    validar[3]=false;
                 }
             }
             break;
@@ -86,6 +93,10 @@ function ense(cond) {
                     mos(ext);
                     validar[2]=false;
                 }
+                if(validar[3]){
+                    mos(inicio);
+                    validar[3]=false;
+                }
             }
             break;
 
@@ -100,6 +111,10 @@ function ense(cond) {
                 if(validar[1]){
                     mos(mod);
                     validar[1]=false;
+                }
+                if(validar[3]){
+                    mos(inicio);
+                    validar[3]=false;
                 }
             }
             break;
