@@ -178,5 +178,8 @@ body{
         text-align: center;
         font-size: 20px;
     }
+    .tabla{
+        margin-bottom: 20px;
+    }
 
 }
