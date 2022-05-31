@@ -55,19 +55,29 @@
                 <th class="filas">Limpia el chat borrando de 1 a 100 mensajes.</th>
             </tr>
             <tr class="cuadro">
-                <th>Rol</th>
+                <th>Add_role</th>
                 <th><span name="span" class="span">k<</span>role [rol] @usuario</th>
                 <th class="filas">Asigna un rol al usuario mencionado.</th>
             </tr>
             <tr class="cuadro">
-                <th>Guardar Mensaje</th>
-                <th><span name="span" class="span">k<</span>save [mensaje]</th>
-                <th class="filas">Guarda el contenido de un mensaje en la base de datos</th>
+                <th>Create_role</th>
+                <th><span name="span" class="span">k<</span>create_role [nombre] [etiqueta de permiso 1] [etiqueta de permiso 2...]</th>
+                <th class="filas">Crea un rol con el nombre y los permisos especificados.</th>
             </tr>
             <tr class="cuadro">
-                <th>Mostrar mensajes</th>
+                <th>Save</th>
+                <th><span name="span" class="span">k<</span>save [mensaje]</th>
+                <th class="filas">Guarda el contenido de un mensaje en la base de datos.</th>
+            </tr>
+            <tr class="cuadro">
+                <th>Show_save</th>
                 <th><span name="span" class="span">k<</span>show_saves</th>
-                <th class="filas">Muestra los mensajes guardados en la base de datos</th>
+                <th class="filas">Muestra los mensajes guardados en la base de datos.</th>
+            </tr>
+            <tr class="cuadro">
+                <th>Delete_save</th>
+                <th><span name="span" class="span">k<</span>del_save [ID]</th>
+                <th class="filas">Elimina un mensaje de la base de datos segun su ID.</th>
             </tr>
         </table>
 
@@ -87,6 +97,21 @@
                 <th>Voice Kick</th>
                 <th><span name="span" class="span">k<</span>kick @usuario</th>
                 <th class="filas">Kickea un usuario de un chat de voz.</th>
+            </tr>
+            <tr class="cuadro">
+                <th>Lock</th>
+                <th><span name="span" class="span">k<</span>lock</th>
+                <th class="filas">Bloquea el canal de texto.</th>
+            </tr>
+            <tr class="cuadro">
+                <th>Unlock</th>
+                <th><span name="span" class="span">k<</span>unlock</th>
+                <th class="filas">Desbloquea el canal de texto.</th>
+            </tr>
+            <tr class="cuadro">
+                <th>Slow mode</th>
+                <th><span name="span" class="span">k<</span>slow_mode [número de segundos]</th>
+                <th class="filas">Activa el modo lento con los segundos de espera especificados.</th>
             </tr>
         </table>
 
